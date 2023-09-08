@@ -1,0 +1,62 @@
+{
+  "id": "9381735d24479c51e4e088383faa876ff2aba",
+  "revision": "9381835d24479c51e4e088383faa876ff2aba",
+  "version": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 170
+  },
+  "creatorIdentifier": "com.facebook.arstudio.skylight",
+  "creatorPlatform": "macosx",
+  "creatorFileVersion": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 170
+  },
+  "visual_programming": {
+    "connections": [
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:98497-89c9273d-2594-4a7b-916a-ac224268e758",
+        "fromPatch": "script_read_variable_patch_model:98343-89c9273d-2594-4a7b-916a-ac224268e758",
+        "fromPort": "script_patch_read_variable_model:98341-89c9273d-2594-4a7b-916a-ac224268e758",
+        "toPatch": "template_patch_model:98495-89c9273d-2594-4a7b-916a-ac224268e758",
+        "toPort": "1"
+      }
+    ],
+    "graphs": [
+      {
+        "modelName": "patch_graph",
+        "identifier": "patch_graph:93909-35d24479-c51e-4e08-8383-faa876ff2aba",
+        "subpatches": [
+          "script_read_variable_patch_model:98343-89c9273d-2594-4a7b-916a-ac224268e758",
+          "template_patch_model:98495-89c9273d-2594-4a7b-916a-ac224268e758"
+        ]
+      }
+    ],
+    "patches": [
+      {
+        "modelName": "script_read_variable_patch_model",
+        "name": "Variables From Script",
+        "identifier": "script_read_variable_patch_model:98343-89c9273d-2594-4a7b-916a-ac224268e758",
+        "object": "script_bridging_variables_model:93855-35d24479-c51e-4e08-8383-faa876ff2aba",
+        "position": [
+          58.06640625,
+          104.5556640625
+        ],
+        "variables": "script_bridging_variables_model:93855-35d24479-c51e-4e08-8383-faa876ff2aba"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Index from Script",
+        "identifier": "template_patch_model:98495-89c9273d-2594-4a7b-916a-ac224268e758",
+        "position": [
+          294.91386718749993,
+          90.37949218749998
+        ],
+        "templateId": "builtin.value",
+        "variantInfo": "float"
+      }
+    ]
+  }
+}
